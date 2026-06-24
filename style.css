@@ -328,7 +328,204 @@
   }
 }
 
+/* ================= TABLET ================= */
 
+@media (max-width: 992px){
+
+  .container{
+    width:90%;
+  }
+
+  nav{
+    padding:12px 20px;
+  }
+
+  nav ul{
+    gap:20px;
+  }
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    gap:50px;
+    padding:40px 0;
+  }
+
+  .hero-text h1{
+    font-size:50px;
+  }
+
+  .hero-text p{
+    max-width:100%;
+    margin:auto auto 30px;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .circle{
+    width:350px;
+    height:350px;
+  }
+
+  .hero-image img{
+    width:400px;
+  }
+
+  .f1{
+    left:10px;
+    bottom:70px;
+  }
+
+  .f2{
+    right:10px;
+    top:80px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+  header{
+    padding:15px 0;
+  }
+
+  nav{
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 20px;
+  }
+
+  nav ul{
+    display:none;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+
+  .logo span{
+    width:35px;
+    height:35px;
+  }
+
+  .hero{
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:40px;
+  }
+
+  .hero-text h1{
+    font-size:42px;
+  }
+
+  .hero-text p{
+    font-size:15px;
+  }
+
+  .hero-buttons{
+    justify-content:center;
+  }
+
+  .portfolio-btn{
+    padding:8px 8px 8px 20px;
+  }
+
+  .btn-icon{
+    width:45px;
+    height:45px;
+    font-size:20px;
+  }
+
+  .btn-outline{
+    padding:14px 28px;
+  }
+
+  .circle{
+    width:280px;
+    height:280px;
+  }
+
+  .hero-image img{
+    width:320px;
+    max-width:100%;
+  }
+
+  .floating{
+    font-size:12px;
+    padding:10px 15px;
+  }
+
+  .f1{
+    left:0;
+    bottom:40px;
+  }
+
+  .f2{
+    right:0;
+    top:40px;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+  .container{
+    width:95%;
+  }
+
+  .hero-text h1{
+    font-size:34px;
+    line-height:1.2;
+  }
+
+  .hero-text p{
+    font-size:14px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    width:100%;
+  }
+
+  .portfolio-btn,
+  .btn-outline{
+    width:100%;
+    justify-content:center;
+  }
+
+  .circle{
+    width:220px;
+    height:220px;
+  }
+
+  .hero-image img{
+    width:260px;
+  }
+
+  .floating{
+    display:none; /* mobile এ floating badges hide */
+  }
+
+  nav ul{
+    gap:10px;
+  }
+
+  nav ul li a{
+    font-size:14px;
+  }
+
+  .contact-btn{
+    padding:10px 20px;
+    font-size:14px;
+  }
+}
 
 
 /* ================= RUNNING STRIP ================= */
@@ -870,6 +1067,178 @@
 }
 
 
+
+/* ================= TABLET ================= */
+
+@media (max-width: 992px){
+
+    .about-container{
+        width:90%;
+        flex-direction:column;
+        text-align:center;
+        gap:70px;
+    }
+
+    .avatar-circle{
+        width:350px;
+        height:350px;
+    }
+
+    .profile-img{
+        max-width:100%;
+    }
+
+    .description{
+        max-width:100%;
+        margin:0 auto 30px;
+    }
+
+    .stats-row,
+    .cta-row{
+        justify-content:center;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px){
+
+    .about-container{
+        width:95%;
+        gap:50px;
+    }
+
+    .main-title{
+        font-size:2rem;
+    }
+
+    .avatar-circle{
+        width:280px;
+        height:280px;
+    }
+
+    .about-section .tag{
+        font-size:12px;
+        padding:5px 10px;
+    }
+
+    .stats-row{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:25px;
+    }
+
+    .cta-row{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .download-btn{
+        width:auto;
+    }
+
+    .signature{
+        font-size:1.8rem;
+    }
+
+    /* Floating Tags Position Fix */
+
+    .tag-mobile{
+        left:-10px;
+    }
+
+    .tag-web{
+        right:-10px;
+    }
+
+    .tag-system,
+    .tag-brand,
+    .tag-motion{
+        display:none;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px){
+
+    .avatar-circle{
+        width:220px;
+        height:220px;
+    }
+
+    .main-title{
+        font-size:1.7rem;
+    }
+
+    .description{
+        font-size:14px;
+    }
+
+    .stat-number{
+        font-size:1.5rem;
+    }
+
+    .stat-label{
+        font-size:12px;
+    }
+
+    .download-btn{
+        padding:6px 6px 6px 18px;
+    }
+
+    .btn-text{
+        margin-right:12px;
+        font-size:14px;
+    }
+
+    .btn-arrow{
+        width:32px;
+        height:32px;
+    }
+
+    .signature{
+        font-size:1.5rem;
+    }
+
+    /* Mobile এ বেশি tag hide */
+
+    .tag-wire,
+    .tag-3d,
+    .tag-brand,
+    .tag-motion,
+    .tag-system,
+    .tag-dash{
+        display:none;
+    }
+
+    .tag-ux{
+        top:60%;
+        left:20%;
+    }
+
+    .tag-mobile{
+        top:75%;
+        left:0;
+    }
+
+    .tag-web{
+        top:75%;
+        right:0;
+    }
+
+    .tag-proto{
+        top:90%;
+        left:30%;
+    }
+
+    .tag-figma{
+        top:25%;
+        right:0;
+    }
+}
 
 
     /* ================= TOOLS ================= */
